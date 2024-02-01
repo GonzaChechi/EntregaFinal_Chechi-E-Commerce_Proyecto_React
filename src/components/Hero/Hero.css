@@ -1,0 +1,19 @@
+.centrar{
+    /* margin-top: 30px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+.bg-color{
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 34%, rgba(161,201,84,1) 84%);
+}
+
+.logoHero {
+    width: 300px;
+    height: 250px;
+}
