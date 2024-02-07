@@ -8,7 +8,7 @@ export const App = () => {
     <div>
     <Navbar/>
     <Hero/>
-    <ItemListContainer mensaje={"La tecnología que buscas"} subMensaje={"Esta a tu alcance"}/>
+    <ItemListContainer greeting={"La tecnología que buscas"}/>
     </div>
   );
 }
