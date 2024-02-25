@@ -1,0 +1,19 @@
+.flex{
+    border: 1px #A1C850 solid;
+    border-radius: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+}
+
+.flex .agregar{
+    align-items: center;
+}
+
+
