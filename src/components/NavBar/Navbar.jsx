@@ -7,7 +7,7 @@ export const Navbar = () => {
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="../../index.html"><img className="logo" src='/src/img/logo3Droid.png'/> </a>
+                    <a className="navbar-brand" href="../../index.html"><img className="logo" src='../../../public/img/logo3Droid.png'/> </a>
                     <button
                         className="navbar-toggler"
                         type="button"
