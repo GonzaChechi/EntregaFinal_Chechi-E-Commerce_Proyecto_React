@@ -1,10 +1,21 @@
 import './ItemListContainer.css';
-export const ItemListContainer = ({greeting}) => {
+import { useState, useEffect } from 'react';
+import { ItemList } from '../ItemList/ItemList';
+export const ItemListContainer = () => {
+    const [product, setProduct] = useState([]);
+    useEffect(()=>{
+        fetch('./data/productos.json')
+        .then(response=>response.json())
+        .then(prods=>{
+            setProduct(prods)
+        })
+        .catch((error)=>console.log(error))
+    },[])
     return (
         <div>
             <div className='d-flex justify-content-center mt-5 itemListContainer p-5'>
-            <p className='fw-bold h2 text-uppercase text-center '>{greeting}</p>
-    </div>
+                <ItemList products={product}/>
+            </div>
         </div>
     );
 }

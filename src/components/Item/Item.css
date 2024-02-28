@@ -1,8 +1,17 @@
-
-
 .card{
     margin: 10px;
     padding: 10px;
     border: 1px #A1C850 solid;
     border-radius: 10px;
+}
+
+.itemListContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.itemListContainer p:nth-child(2){
+    width: 100%;
+    text-align: center;
 }

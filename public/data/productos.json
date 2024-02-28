@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Modulo Samsung J7 Prime",
+        "quality": "OLED",
+        "price": 18000,
+        "stock": 5,
+        "img": "1-modulo-j7-prime.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Modulo Samsung a12",
+        "quality": "OLED",
+        "price": 20000,
+        "stock": 7,
+        "img": "2-modulo-a12.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Modulo Samsung a32",
+        "quality": "OLED",
+        "price": 40000,
+        "stock": 2,
+        "img": "3-modulo-a32.jpg"
+    }
+]
