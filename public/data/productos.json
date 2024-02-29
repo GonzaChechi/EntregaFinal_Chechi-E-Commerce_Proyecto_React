@@ -5,7 +5,8 @@
         "quality": "OLED",
         "price": 18000,
         "stock": 5,
-        "img": "1-modulo-j7-prime.jpg"
+        "img": "1-modulo-j7-prime.jpg",
+        "category": "modulo"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "quality": "OLED",
         "price": 20000,
         "stock": 7,
-        "img": "2-modulo-a12.jpg"
+        "img": "2-modulo-a12.jpg",
+        "category": "modulo"
     },
     {
         "id": 3,
@@ -21,6 +23,37 @@
         "quality": "OLED",
         "price": 40000,
         "stock": 2,
-        "img": "3-modulo-a32.jpg"
+        "img": "3-modulo-a32.jpg",
+        "category": "modulo"
+    },
+    {
+        "id": 4,
+        "title": "Pin de carga J700",
+        "quality": "AAA",
+        "price": 500,
+        "stock": 8,
+        "img": "4-pin-de-carga-j700.jpg",
+        "category": "pin-de-carga"
+    },
+    {
+        "id": 5,
+        "title": "Pin de carga a10",
+        "quality": "AAA",
+        "price": 500,
+        "stock": 4,
+        "img": "5-pin-de-carga-a10.jpg",
+        "category": "pin-de-carga"
+    },
+    {
+        "id": 6,
+        "title": "Pin de carga G5",
+        "quality": "AAA",
+        "price": 500,
+        "stock": 2,
+        "img": "6-pin-de-carga-c-plus.jpg",
+        "category": "pin-de-carga"
     }
 ]
+
+
+
