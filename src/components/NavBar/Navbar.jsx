@@ -9,7 +9,7 @@ export const Navbar = () => {
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <Link to={'/'}>
-                        <a className="navbar-brand" ><img className="logo" src='../../../public/img/logo3Droid.png' /> </a>
+                        <img className="logo" src='../../../public/img/logo3Droid.png' /> 
                     </Link>
                     
                     <button

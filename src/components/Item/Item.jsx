@@ -13,10 +13,11 @@ export const Item = ({ product }) => {
                 <h5 className="card-text"> {product.quality}</h5>
                 <h2 className="card-title">{product.title}</h2>
                 <span className="spanPrice">{`Precio: ${product.price}`}</span>
-                <p className="card-text"> {`Stock: ${product.stock}`}</p>
-                <div><Button style={{ width: '100px', fontSize: '20px' }} >
-                    Agregar
-                </Button></div>
+                <Link to={`/product/${product.id}`}>
+                    <div><Button style={{ width: '200px', fontSize: '20px' }} >
+                        Ver Producto
+                    </Button></div>
+                </Link>
             </div>
         </div>
     );
