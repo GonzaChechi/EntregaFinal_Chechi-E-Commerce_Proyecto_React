@@ -3,9 +3,6 @@ import './Item.css'
 import { Link } from "react-router-dom"
 
 export const Item = ({ product }) => {
-    const handelOnAdd = () => {
-        console.log("Producto añadido al carrito")
-    }
     return (
         <div className="card" style={{ width: "20rem" }}>
             <img src={`/img/${product.img}`} alt={`Imagen de ${product.title} id: ${product.id}`} />

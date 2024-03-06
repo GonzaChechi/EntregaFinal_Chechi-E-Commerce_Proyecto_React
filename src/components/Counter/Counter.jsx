@@ -4,7 +4,7 @@ import { Button } from '../Button/Button';
 
 
 export const Counter = ({ stock, onAdd }) => {
-    const { count, increment, decrement, reset } = UseCounter(1, stock, 1)
+    const { count, increment, decrement } = UseCounter(1, stock, 1)
 
 return (
     <div className='flex'>
@@ -20,11 +20,10 @@ return (
             </Button>
         </div>
         <div className='agregar'>
-            <Button style={{ width: '100px', fontSize: '20px' }} onClick={onAdd}>
+            <Button style={{ width: '100px', fontSize: '20px' }} onClick={() => onAdd(count)}>
                 Agregar
             </Button>
         </div>
-
     </div>
 
 )
