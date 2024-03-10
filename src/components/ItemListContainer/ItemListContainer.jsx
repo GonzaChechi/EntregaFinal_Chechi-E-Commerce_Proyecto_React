@@ -22,7 +22,7 @@ export const ItemListContainer = () => {
     return (
         <div>
             <div className='d-flex justify-content-center mt-5 itemListContainer p-5'>
-                <ItemList products={product} />
+                <ItemList products={product} plantilla="Item" />
             </div>
         </div>
     );

@@ -43,9 +43,7 @@ export const CartProvider = (props) => { //forma de proveer el contexto, puede r
     }
 
     //Obtener precio total del carrito
-    const totalPrice = () => {
-        return cart.reduce((acum, prod) => acum += (prod.quantity * prod.price), 0)
-    }
+    const totalPrice = cart.reduce((acum, prod) => acum + (prod.quantity * prod.price), 0);
 
 
     return (

@@ -2,9 +2,9 @@ import './ItemDetail.css'
 import { Counter } from '../Counter/Counter'
 import { useCartContext } from '../../context/CartContext'
 export const ItemDetail = ({ item }) => {
-    const {AddItem} = useCartContext()
+    const { AddItem } = useCartContext()
     const handleAddToCart = (count) => {
-        AddItem(item,count)
+        AddItem(item, count)
     }
 
     return (

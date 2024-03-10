@@ -1,0 +1,16 @@
+.totalPrice{
+    font-size: 25px;
+}
+
+.totalPrice span{
+    font-weight: 700;
+    
+}
+
+.cartButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+

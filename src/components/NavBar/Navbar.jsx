@@ -9,9 +9,8 @@ export const Navbar = () => {
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <Link to={'/'}>
-                        <img className="logo" src='../../../public/img/logo3Droid.png' /> 
+                        <img className="logo" src='../../../public/img/logo3Droid.png' />
                     </Link>
-                    
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -27,9 +26,7 @@ export const Navbar = () => {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <Categories />
                         </ul>
-                        <a href="#">
-                            <CartWidget />
-                        </a>
+                        <CartWidget />
                     </div>
                 </div>
             </nav>

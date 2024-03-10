@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 
-export const UseCounter = (mintValue = 0, maxValue = 1, step = 1) => {
-    const [count, setCount] = useState(mintValue);
+export const UseCounter = (initialValue = 0, maxValue = 1, step = 1) => {
+    const [count, setCount] = useState(initialValue);
 
     const increment = () => {
         if (count + step <= maxValue) {
@@ -11,14 +11,14 @@ export const UseCounter = (mintValue = 0, maxValue = 1, step = 1) => {
     };
 
     const decrement = () => {
-        if (count - step >= mintValue) {
+        if (count - step >= 1) {
             setCount(count - step);
         }
     };
     const reset = () => {
-        setCount(mintValue)
+        setCount(1)
     };
-    return {count, increment, decrement, reset}
+    return { count, increment, decrement, reset }
 }
 
 
