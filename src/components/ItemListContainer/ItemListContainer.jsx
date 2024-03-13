@@ -2,20 +2,20 @@ import './ItemListContainer.css';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ItemList } from '../ItemList/ItemList';
+import { getProduct, getProducts } from '../../firebase/firebase.js';
 export const ItemListContainer = () => {
     const [product, setProduct] = useState([]);
     const { catid } = useParams();
     useEffect(() => {
-        fetch('../data/productos.json')
-            .then(response => response.json())
+        getProducts()
             .then(prods => {
                 if (catid) {
                     const productosFiltrados = prods.filter(prod => prod.category == catid)
                     setProduct(productosFiltrados)
-                }else{
+                } else {
                     setProduct(prods)
                 }
-                
+
             })
             .catch((error) => console.log(error))
     }, [catid])

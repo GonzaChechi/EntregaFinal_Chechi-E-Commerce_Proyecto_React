@@ -9,7 +9,7 @@ export const Navbar = () => {
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <Link to={'/'}>
-                        <img className="logo" src='../../../public/img/logo3Droid.png' />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/react-2024-23fa8.appspot.com/o/logo3Droid.png?alt=media&token=936f7810-6317-49eb-aaf9-ff4275f6dc5c" alt="logotipo de la marca" />
                     </Link>
                     <button
                         className="navbar-toggler"

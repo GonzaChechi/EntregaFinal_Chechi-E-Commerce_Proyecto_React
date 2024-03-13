@@ -1,0 +1,59 @@
+[
+    {
+        
+        "title": "Modulo Samsung J7 Prime",
+        "quality": "OLED",
+        "price": 18000,
+        "stock": 5,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2024-23fa8.appspot.com/o/1-modulo-j7-prime.jpg?alt=media&token=0b353164-8652-4e57-b4be-a45fd127c517",
+        "category": "modulo"
+    },
+    {
+        
+        "title": "Modulo Samsung a12",
+        "quality": "OLED",
+        "price": 20000,
+        "stock": 7,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2024-23fa8.appspot.com/o/2-modulo-a12.jpg?alt=media&token=eab5148b-95ba-492e-9c21-de693ea4814f",
+        "category": "modulo"
+    },
+    {
+        
+        "title": "Modulo Samsung a32",
+        "quality": "OLED",
+        "price": 40000,
+        "stock": 2,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2024-23fa8.appspot.com/o/3-modulo-a32.jpg?alt=media&token=35f07175-d337-4271-b11e-e3237dce8e7b",
+        "category": "modulo"
+    },
+    {
+        
+        "title": "Pin de carga J700",
+        "quality": "AAA",
+        "price": 500,
+        "stock": 8,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2024-23fa8.appspot.com/o/4-pin-de-carga-j700.jpg?alt=media&token=97ff1d13-9e21-4eb5-8c20-a4394f0261d7",
+        "category": "pin-de-carga"
+    },
+    {
+        
+        "title": "Pin de carga a10",
+        "quality": "AAA",
+        "price": 500,
+        "stock": 4,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2024-23fa8.appspot.com/o/5-pin-de-carga-a10.jpg?alt=media&token=82f847d8-9796-4773-8409-85b037931491",
+        "category": "pin-de-carga"
+    },
+    {
+        
+        "title": "Pin de carga G5",
+        "quality": "AAA",
+        "price": 500,
+        "stock": 2,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2024-23fa8.appspot.com/o/6-pin-de-carga-c-plus.jpg?alt=media&token=62fd81d6-33ea-412c-b9ce-e1ca79b6f79f",
+        "category": "pin-de-carga"
+    }
+]
+
+
+

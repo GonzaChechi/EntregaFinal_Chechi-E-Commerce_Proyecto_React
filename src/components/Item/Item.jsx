@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 
 export const Item = ({ product }) => {
     return (
-        <div className="card" style={{ width: "20rem" }}>
-            <img src={`/img/${product.img}`} alt={`Imagen de ${product.title} id: ${product.id}`} />
+        <div className="card" style={{ width: "22rem" }}>
+            <img src={`${product.img}`} alt={`Imagen de ${product.title} id: ${product.id}`} />
             <div className="card-body">
                 <h5 className="card-text"> {product.quality}</h5>
                 <h2 className="card-title">{product.title}</h2>
