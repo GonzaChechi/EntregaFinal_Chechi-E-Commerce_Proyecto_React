@@ -1,4 +1,5 @@
 import './styles/App.css'
+import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/NavBar/Navbar';
 import { Hero } from './components/Hero/Hero';
@@ -9,6 +10,7 @@ import { Checkout } from './components/Checkout/Checkout';
 import { ItemDetailsContainer } from './components/ItemsDetailsContainer/ItemDetailsContainer';
 import { NotFound } from './components/NotFound/NotFound';
 import { CartProvider } from './context/CartContext';
+import { ToastContainer } from 'react-toastify';
 
 export const App = () => {
 
@@ -16,6 +18,7 @@ export const App = () => {
     <BrowserRouter>
       <CartProvider>
         <Navbar />
+        <ToastContainer  />
         <Routes>
           <Route path='/' element={<>
             <Hero />

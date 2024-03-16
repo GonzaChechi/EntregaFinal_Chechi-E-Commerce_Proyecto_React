@@ -1,6 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, doc, getDoc, getDocs, updateDoc, deleteDoc } from 'firebase/firestore';
+import { getFirestore, collection, doc, getDoc, getDocs, updateDoc, deleteDoc, addDoc } from 'firebase/firestore';
 
 
 const firebaseConfig = {
@@ -33,15 +33,30 @@ export const getProduct = async (id) => {
 //ACTUALIZAR PRODUCTO
 export const updateProduct = async (id, info) => {
     await updateDoc(doc(db, "productos", id), info)
-    
+
 }
 
 //ELIMINAR PRODUCTO
-export const deleProduct = async (id)=>{
-    await deleteDoc(doc(db,"productos",id))
-    
+export const deleProduct = async (id) => {
+    await deleteDoc(doc(db, "productos", id))
+
 }
 
-// updateProduct("KY8kkDDAq1rAH7kyrQFI",{
-// "stock": 9
-// })
+//CREATE AND READ ORDENES DE COMPRA
+
+export const createOrdenCompra = async (cliente, precioTotal, carrito, fecha) => {
+    const ordenCompra = await addDoc(collection(db, "ordenesCompra"), {
+        cliente: cliente,
+        items: carrito,
+        precioTotal: precioTotal,
+        fecha: fecha
+    })
+    return ordenCompra
+}
+
+export const getOrdenCompra = async (id) => {
+    const ordenCompra = await getDoc(doc(db, "ordenesCompra", id))
+    const item = { ...ordenCompra.data(), id: ordenCompra.id }
+    return item
+}
+

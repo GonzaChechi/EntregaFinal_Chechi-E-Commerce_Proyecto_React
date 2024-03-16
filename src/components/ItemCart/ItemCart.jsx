@@ -2,11 +2,11 @@ import { useCartContext } from "../../context/CartContext";
 import { Counter } from "../Counter/Counter";
 import { Button } from "../Button/Button";
 
+
 import './ItemCart.css'
 
 export const ItemCart = ({ product }) => {
     const { RemoveItem, AddItem } = useCartContext();
-
     const handleAddToCart = (count) => {
         AddItem(product, count)
     }

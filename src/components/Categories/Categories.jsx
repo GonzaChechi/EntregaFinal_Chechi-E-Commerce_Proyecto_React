@@ -19,11 +19,11 @@ export const Categories = () => {
             </li>
             <li className="nav-item">
                 <Link to={'./category/pin-de-carga'} className='link'>
-                <button className="nav-link active" >
-                    Pin de carga
-                </button>
+                    <button className="nav-link active" >
+                        Pin de carga
+                    </button>
                 </Link>
-                
+
             </li>
         </>
     );

@@ -6,8 +6,8 @@ export const CartWidget = () => {
   return (
     <>
       <div className='cart-widget'>
-      <Link to={'/cart'} >
-        <svg
+        <Link to={'/cart'} >
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             width={25}
             height={25}
@@ -20,7 +20,7 @@ export const CartWidget = () => {
           <div className="count-display">{getItemQuantity()}</div>
         </Link>
 
-        
+
       </div>
 
     </>

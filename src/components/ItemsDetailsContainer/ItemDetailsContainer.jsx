@@ -6,12 +6,12 @@ import { ItemDetail } from '../ItemDetail/ItemDetail';
 
 export const ItemDetailsContainer = () => {
     const [item, setItem] = useState([]);
-    const {proid} = useParams()
+    const { proid } = useParams()
     useEffect(() => {
         getProduct(proid)
-        .then(prod=> setItem(prod))
-        .catch(error=>console.log(error))
-    },[])
+            .then(prod => setItem(prod))
+            .catch(error => console.log(error))
+    }, [])
     return (
         <div className="container">
             <ItemDetail item={item} />

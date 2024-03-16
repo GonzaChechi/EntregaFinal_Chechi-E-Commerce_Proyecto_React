@@ -12,18 +12,23 @@ export const CartProvider = (props) => { //forma de proveer el contexto, puede r
 
     //Agregar Producto
     const AddItem = (item, cantidad) => {
-        if (isInCart(item.id)) {
-            const index = cart.findIndex(prod => prod.id === item.id)
-            const aux = [...cart]
-            aux[index].quantity = cantidad
-            setCart(aux)
-        } else {
-            const newItem = {
-                ...item,
-                quantity: cantidad
+        if (item.stock > 0) {
+            if (isInCart(item.id)) {
+                const index = cart.findIndex(prod => prod.id === item.id)
+                const aux = [...cart]
+                aux[index].quantity = cantidad
+                setCart(aux)
+            } else {
+                const newItem = {
+                    ...item,
+                    quantity: cantidad
+                }
+                setCart([...cart, newItem]) //guardo en el carrito el nuevo producto
             }
-            setCart([...cart, newItem]) //guardo en el carrito el nuevo producto
+        } else {
+            console.log("producto sin stock")
         }
+
     }
 
     //Eliminar Producto

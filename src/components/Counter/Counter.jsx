@@ -2,7 +2,7 @@ import './Counter.css'
 import { UseCounter } from '../../hooks/UseCounter';
 import { Button } from '../Button/Button';
 
-export const Counter = ({ stock, onAdd, initialValue}) => {
+export const Counter = ({ stock, onAdd, initialValue }) => {
     const { count, increment, decrement } = UseCounter(initialValue, stock, 1)
 
     return (
