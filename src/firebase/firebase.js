@@ -4,7 +4,7 @@ import { getFirestore, collection, doc, getDoc, getDocs, updateDoc, deleteDoc, a
 
 
 const firebaseConfig = {
-    
+    apiKey: window.REACT_APP_FIREBASE_API_KEY, //apiKey se coloca en un archivo .env
     authDomain: "react-2024-23fa8.firebaseapp.com",
     projectId: "react-2024-23fa8",
     storageBucket: "react-2024-23fa8.appspot.com",
